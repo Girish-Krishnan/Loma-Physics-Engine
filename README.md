@@ -1,11 +1,11 @@
 # A Differentiable Physics Engine in **loma**
-This repository contains the full source, drivers, and figures for my CSE 291 final project.  The goal is to show that **loma** (a tiny pedagogical DSL/IR) can act as a *practical* differentiable‐physics language once its C backend is compiled.  With only a user-written potential \(U(q,\theta)\), the compiler automatically produces
+This repository contains the full source, drivers, and figures for my CSE 291 final project.  The goal is to show that **loma** (a tiny pedagogical DSL/IR) can act as a *practical* differentiable‐physics language once its C backend is compiled.  With only a user-written potential $U(q,\theta)$, the compiler automatically produces
 
-1. the force \(f(q)=-\nabla_qU\) (via reverse AD),
+1. the force $f(q)=-\nabla_qU$ (via reverse AD),
 2. a symplectic-Euler integrator, and  
 3. the corresponding reverse pass for *any* differentiable parameter.
 
-The resulting binaries run **\(10^{3}\!-\!10^{4}\times\)** faster than an equivalent JAX + JIT baseline while returning identical trajectories and gradients.
+The resulting binaries run **$10^{3}-10^{4}\times$** faster than an equivalent JAX + JIT baseline while returning identical trajectories and gradients.
 
 ---
 
@@ -87,7 +87,7 @@ so a direct runtime comparison is less meaningful.
 
 | file | description |
 |------|-------------|
-| `final_imgs/energy_drift_plot.pdf` | log–log energy drift (h = 0.1, 0.05, 0.025) showing \(O(h^2)\) slope |
+| `final_imgs/energy_drift_plot.pdf` | log–log energy drift (h = 0.1, 0.05, 0.025) showing $O(h^2)$ slope |
 | `final_imgs/triple_pendulum.pdf` | chaotic θ₃(t) for 3-link pendulum, Loma vs JAX (curves overlap) |
 | `checkpoint_imgs/spring.png` | 2-mass spring chain positions vs time |
 | `checkpoint_imgs/pendulum.png` | single pendulum θ(t) over 10 s |
