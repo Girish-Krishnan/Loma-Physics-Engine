@@ -22,6 +22,8 @@ The resulting binaries run **$10^{3}-10^{4}\times$** faster than an equivalent J
 > **Tip:** keep `$PYTHONPATH` *unset*; every driver appends the correct parent
 > directory to `sys.path` before importing the `compiler` front-end.
 
+**Note**: You also need a complete working implementation of HW 1, 2 and 3 for this code to run (as the compiler is needed, of course). I didn't include the compiler source here for brevity.
+
 ---
 
 ## 1 · Repository layout
